@@ -20,7 +20,7 @@ db_name = os.getenv("POSTGRES_DATABASE")
 
 
 conn = psycopg2.connect(
-    POSTGRES_URL=POSTGRES_URL,
+    POSTGRES_URL
 )
 
 # Información de la base de datos
