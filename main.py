@@ -15,10 +15,10 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 openai_model = "text-davinci-002"
 
 # Conexión a PostgreSQL
-db_name = os.getenv("DB_NAME")  
-db_user = os.getenv("DB_USER")
-db_pass = os.getenv("DB_PASSWORD")  
-db_host = os.getenv("DB_HOST")
+db_name = os.getenv("POSTGRES_DATABASE")  
+db_user = os.getenv("POSTGRES_USER")
+db_pass = os.getenv("POSTGRES_PASSWORD")  
+db_host = os.getenv("POSTGRES_HOST")
 db_port = os.getenv("DB_PORT")
 
 conn = psycopg2.connect(
